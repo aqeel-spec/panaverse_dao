@@ -1,0 +1,34 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: #3182ce;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  flex-grow: 1;
+}
+
+.heading {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
