@@ -29,11 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/courses.js"
-    ],
-    "/courses/common/quater1": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/courses/common/quater1.js"
     ]
   },
   "ampFirstPages": []
