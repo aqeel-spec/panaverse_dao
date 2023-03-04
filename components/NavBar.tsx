@@ -8,6 +8,8 @@ import { LinkIcon } from "@chakra-ui/icons";
 import IconGithub from "./icons/Gicon";
 import { useColorMode } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
+import { navVariants } from "../utils/motion";
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -19,7 +21,13 @@ export default function Nav() {
   };
 
   return (
-    <div className="shadow-md  w-ful top-0 left-0 m-2 ">
+    <motion.div
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false }}
+      className="shadow-md  w-ful top-0 left-0 m-2 "
+    >
       <div
         className={`md:flex rounded items-center ${
           colorMode === "light" ? "bg-white" : "bg-gray-600 "
@@ -109,7 +117,7 @@ export default function Nav() {
           </div>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 /**

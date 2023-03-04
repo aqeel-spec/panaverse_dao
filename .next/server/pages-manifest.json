@@ -1,0 +1,10 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/courses": "pages/courses.js",
+  "/courses/common/quater1": "pages/courses/common/quater1.js",
+  "/api/ds/[s]": "pages/api/ds/[s].js",
+  "/api/ds/common": "pages/api/ds/common.js",
+  "/api/hello": "pages/api/hello.js"
+}

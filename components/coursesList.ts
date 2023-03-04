@@ -631,7 +631,9 @@ export const specializationCourse = [
         ],
       },
     },
-    // quarter5: {},
+    quarter5: {
+      courseCode: 'w3As',
+    },
   },
 ]
 export const common = [

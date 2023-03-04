@@ -7,5 +7,16 @@ import type { Sp } from "@/types/ds";
 // }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<Sp>) {
-  res.status(200).json(specializationCourse);
+  {
+    if (req.method === "GET") {
+      const courseCode = req.query.code as string;
+      // const commentId : any = req.query.id;
+      // const comment = todos.find(
+      //   (comment) => comment.id === parseInt(commentId)
+      // )
+      //const index = specializationCourse.findIndex((data) => data.quarter4 === courseCode)
+      res.status(200).json(specializationCourse);
+    }
+    res.status(200).json(specializationCourse);
+  }
 }

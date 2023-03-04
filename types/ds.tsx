@@ -272,5 +272,7 @@ export type Sp = {
       projects: Project[];
     };
   };
-  // quarter5: {};
+  quarter5: {
+    courseCode: string;
+  };
 }[];

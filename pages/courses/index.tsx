@@ -33,9 +33,13 @@ export default function Courses() {
 
   const [data, setData] = useState<commonCourses>([]);
   const [sp, setSp] = useState<Data>([]);
+
   //     drawer imported here
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
+  //   query data from id
+  const [courseCode, setCourseCode] = useState<string>();
+  console.log("data is : ", courseCode);
   useEffect(() => {
     const fetchData = async () => {
       const result = await fetch("/api/ds/common");
@@ -50,7 +54,7 @@ export default function Courses() {
     fetchData();
     specializedData();
   }, []);
-  console.log(data);
+  console.log("sp data is  : ", sp);
 
   return (
     <>
@@ -139,12 +143,13 @@ export default function Courses() {
                       </div>
                       <div
                         className="hidden divide-y-2 py-2  peer-hover:flex hover:flex
-                        w-[60%] px-4 z-10 ml-[-270px] mt-[-30px] 
+                        w-[60%] px-4 z-10 lg:ml-[-270px] sm:ml-0 mt-[-30px] 
                         flex-col bg-white drop-shadow-lg peer-hover:ease-in-out "
                       >
                         <Link
+                          onClick={() => setCourseCode(ele.q4.Code)}
                           className="px-5 py-3 underline hover:underline-offset-4 decoration-sky-500 inkine-flex hover:bg-gray-200"
-                          href="courses/specialization/quarter4"
+                          href="#"
                         >
                           Quarter : <span>{ele.q4.quater}</span>
                           <h1 className="text-end">{ele.q4.Code}</h1>

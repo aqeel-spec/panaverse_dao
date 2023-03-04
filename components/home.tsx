@@ -24,6 +24,14 @@ import { useColorMode } from "@chakra-ui/react";
 import { courses } from "./coursesList";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { item, list, listItem } from "../utils/motion";
+import {
+  slideIn,
+  navVariant2,
+  paraVariant,
+  fadeIn,
+  container,
+} from "../utils/motion";
 
 function homePage() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -42,16 +50,20 @@ function homePage() {
     <div className=" pr-0">
       <Header />
       <div className=" pl-2  ">
-        <div
-          className="md:flex gap-4 
+        <motion.div
+          // xxxxxxxxxxxx
+          className="md:flex gap-4 lg:pl-6
         text-center align-center
-        font-font font-bold text-4xl pb-4 pt-[78px] border-b-4 border-gray-300   "
+        font-font font-bold text-4xl pb-4 pt-[78px]    "
         >
           Emerging
           <div className="text-red-600">Technologies</div>
-        </div>
+        </motion.div>
         <motion.div
-          className={`container rounded-md pl-4 m-2 py-4 ${
+          variants={fadeIn("right", "spring", 0.25, 1)}
+          initial="hidden"
+          whileInView="show"
+          className={`container rounded-md px-4  py-4 ${
             colorMode === "light"
               ? "bg-blue-100"
               : "bg-gray-400 border-x-white border-x-4"
@@ -67,7 +79,12 @@ function homePage() {
             width={500}
             className="md:float-right m-4 rounded-md hover:animate-pulse ease-in-out "
           />
-          <p className="box  py-4 border-indigo-600  ">
+          <motion.p
+            variants={paraVariant(0.8)}
+            initial="hidden"
+            whileInView="show"
+            className="box  py-4 border-indigo-600  "
+          >
             The internet is without a doubt the most important technological
             development in human history. Web3, 3D Metaverse, AI, IoT, Cloud,
             and Edge technologies expand the internet as we know it by
@@ -75,20 +92,24 @@ function homePage() {
             of all aspects of modern technology, including 3D, VR, AR, AI,
             blockchain, cloud and edge computing, voice computing, ambient
             computing, and more.
-          </p>
+          </motion.p>
           <br />
-          <p>
+          <motion.p
+            variants={paraVariant(1.3)}
+            initial="hidden"
+            whileInView="show"
+          >
             Citi is the latest Wall Street business to give a positive prognosis
             for Web 3.0 and the Metaverse, terms used to depict a future
             internet vision centered on decentralized technologies and virtual
             worlds. Citi stated in a March 2022 research paper that the
             metaverse economy might have a total addressable market of up to $13
             trillion and five billion people by 2030.
-          </p>
+          </motion.p>
         </motion.div>
         <motion.div animate={{ x: 0 }} initial={{ x: -100 }}>
-          <Box className="  text-center  border-t-4 border-gray-700 left-0 top-0 pt-[400px] ">
-            <div className="font-bold text-4xl  text-center text-red-500   ">
+          <Box className="  text-center   left-0 top-0 pt-[400px] ">
+            <motion.div className="font-bold text-4xl  text-center text-red-500   ">
               Panaverse
               <div
                 className={`${
@@ -97,58 +118,73 @@ function homePage() {
               >
                 DAO (Decentralized Autonomous Organization)
               </div>
-            </div>
+            </motion.div>
           </Box>
-          <motion.div className="m-4 ">
-            <SimpleGrid
-              gap="4"
-              columns={2}
-              minChildWidth="220px"
-              className="pt-4 pb-[90px] border-b-2  "
+          <motion.div
+            className="m-4 "
+            variants={fadeIn("down", "spring", 1, 1.5)}
+            initial="hidden"
+            whileInView="show"
+          >
+            <motion.div
+              variants={list}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false }}
             >
-              <Box
-                as="ul"
-                className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
+              <SimpleGrid
+                px={"2"}
+                gap="4"
+                columns={2}
+                minChildWidth="220px"
+                className="pt-4 pb-[90px] border-b-2  "
               >
-                <Grid className="px-5 py-2  text-xl ">
-                  <h1 className="">Members</h1>
-                  <div className="my-3 md:flex flex gap-2 ">
-                    3.5<h1 className="text-red-500">K+</h1>
+                <motion.div variants={listItem}>
+                  <Box
+                    as="ul"
+                    className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
+                  >
+                    <Grid className="px-5 py-2  text-xl ">
+                      <h1 className="">Members</h1>
+                      <div className="my-3 md:flex flex gap-2 ">
+                        3.5<h1 className="text-red-500">K+</h1>
+                      </div>
+                    </Grid>
+                    <div className="text-right px-8 py-4 mt-[-95px] ">
+                      <Avatar />
+                    </div>
+                  </Box>
+                </motion.div>
+                <Box
+                  as="ul"
+                  className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
+                >
+                  <Grid className="px-5 py-2  text-xl ">
+                    <h1 className="">Programs</h1>
+                    <div className="my-3 md:flex flex  ">
+                      5<h1 className="text-red-500">+</h1>
+                    </div>
+                  </Grid>
+                  <div className="text-right px-8 py-4 mt-[-95px] ">
+                    <Icon as={IconProgrammingLanguage} h="50px" w="50px" />
                   </div>
-                </Grid>
-                <div className="text-right px-8 py-4 mt-[-95px] ">
-                  <Avatar />
-                </div>
-              </Box>
-              <Box
-                as="ul"
-                className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
-              >
-                <Grid className="px-5 py-2  text-xl ">
-                  <h1 className="">Programs</h1>
-                  <div className="my-3 md:flex flex  ">
-                    5<h1 className="text-red-500">+</h1>
+                </Box>
+                <Box
+                  as="ul"
+                  className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
+                >
+                  <Grid className="px-5 py-2  text-xl ">
+                    <h1 className="">Cities</h1>
+                    <div className="my-3 md:flex flex  ">
+                      4<h1 className="text-red-500">+</h1>
+                    </div>
+                  </Grid>
+                  <div className="text-right px-8 py-4 mt-[-95px] ">
+                    <Icon as={IconBxMap} h="50px" w="50px" />
                   </div>
-                </Grid>
-                <div className="text-right px-8 py-4 mt-[-95px] ">
-                  <Icon as={IconProgrammingLanguage} h="50px" w="50px" />
-                </div>
-              </Box>
-              <Box
-                as="ul"
-                className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
-              >
-                <Grid className="px-5 py-2  text-xl ">
-                  <h1 className="">Cities</h1>
-                  <div className="my-3 md:flex flex  ">
-                    4<h1 className="text-red-500">+</h1>
-                  </div>
-                </Grid>
-                <div className="text-right px-8 py-4 mt-[-95px] ">
-                  <Icon as={IconBxMap} h="50px" w="50px" />
-                </div>
-              </Box>
-            </SimpleGrid>
+                </Box>
+              </SimpleGrid>
+            </motion.div>
           </motion.div>
         </motion.div>
         <motion.div className=" pt-[30px] mx-10 ">
