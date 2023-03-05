@@ -14,11 +14,10 @@ export type Data = {
   };
 }[];
 export type commonCourses = {
-  quater1: any;
   title: string;
   subTitle: string;
   id: number;
-  quarter1: {
+  quater1: {
     name: string;
     code: string;
     des: string;

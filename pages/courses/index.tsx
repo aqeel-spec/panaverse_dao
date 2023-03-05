@@ -36,7 +36,7 @@ export default function Courses() {
 
   //     drawer imported here
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = React.useRef();
+  const btnRef = React.useRef<any>();
   //   query data from id
   const [courseCode, setCourseCode] = useState<string>();
   console.log("data is : ", courseCode);

@@ -163,7 +163,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt1.l1}
+                        href={`${ele.quater2.Course_Outline.pt1.l1}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt1.l1}
@@ -180,7 +180,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt1.l2}
+                        href={`${ele.quater2.Course_Outline.pt1.l2}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt1.l2}
@@ -197,7 +197,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt1.l3}
+                        href={`${ele.quater2.Course_Outline.pt1.l3}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt1.l3}
@@ -239,7 +239,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt2.l1}
+                        href={`${ele.quater2.Course_Outline.pt2.l1}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt2.l1}
@@ -256,7 +256,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt2.l2}
+                        href={`${ele.quater2.Course_Outline.pt2.l2}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt2.l2}
@@ -298,7 +298,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt3.l1}
+                        href={`${ele.quater2.Course_Outline.pt3.l1}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt3.l1}
@@ -315,7 +315,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt3.l2}
+                        href={`${ele.quater2.Course_Outline.pt3.l2}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt3.l2}
@@ -332,7 +332,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt3.l3}
+                        href={`${ele.quater2.Course_Outline.pt3.l3}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt3.l3}
@@ -374,7 +374,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt4.l1}
+                        href={`${ele.quater2.Course_Outline.pt4.l1}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt4.l1}
@@ -416,7 +416,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt5.l1}
+                        href={`${ele.quater2.Course_Outline.pt5.l1}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt5.l1}
@@ -433,7 +433,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt5.l2}
+                        href={`${ele.quater2.Course_Outline.pt5.l2}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt5.l2}
@@ -475,7 +475,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt6.l1}
+                        href={`${ele.quater2.Course_Outline.pt6.l1}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt6.l1}
@@ -492,7 +492,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt6.l2}
+                        href={`${ele.quater2.Course_Outline.pt6.l2}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt6.l2}
@@ -509,7 +509,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt6.l3}
+                        href={`${ele.quater2.Course_Outline.pt6.l3}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt6.l3}
@@ -551,7 +551,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt7.l1}
+                        href={`${ele.quater2.Course_Outline.pt7.l1}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt7.l1}
@@ -593,7 +593,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt8.l1}
+                        href={`${ele.quater2.Course_Outline.pt8.l1}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt8.l1}
@@ -610,7 +610,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt8.l2}
+                        href={`${ele.quater2.Course_Outline.pt8.l2}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt8.l2}
@@ -627,7 +627,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt8.l3}
+                        href={`${ele.quater2.Course_Outline.pt8.l3}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt8.l3}
@@ -707,7 +707,7 @@ function quater2() {
                       </h1>
                       <Link
                         className="text-base text-sky-500 hover:text-sky-300 hover:underline-offset-4 underline"
-                        href={ele.quater2.Course_Outline.pt9.l1}
+                        href={`${ele.quater2.Course_Outline.pt9.l1}`}
                       >
                         {" "}
                         {ele.quater2.Course_Outline.pt9.l1}

@@ -1,10 +1,16 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/courses": "pages/courses.js",
-  "/courses/common/quater1": "pages/courses/common/quater1.js",
+  "/_error": "pages/_error.js",
   "/api/ds/[s]": "pages/api/ds/[s].js",
   "/api/ds/common": "pages/api/ds/common.js",
-  "/api/hello": "pages/api/hello.js"
+  "/api/ds/specialization": "pages/api/ds/specialization.js",
+  "/api/hello": "pages/api/hello.js",
+  "/courses/common/quater1": "pages/courses/common/quater1.html",
+  "/courses/common/quater2": "pages/courses/common/quater2.html",
+  "/courses/common/quater3": "pages/courses/common/quater3.html",
+  "/courses": "pages/courses.html",
+  "/courses/specialization/[404]": "pages/courses/specialization/[404].html",
+  "/": "pages/index.html",
+  "/404": "pages/404.html"
 }
