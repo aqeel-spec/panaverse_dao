@@ -126,65 +126,58 @@ function homePage() {
             initial="hidden"
             whileInView="show"
           >
-            <motion.div
-              variants={list}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false }}
+            <SimpleGrid
+              px={"2"}
+              gap="4"
+              columns={2}
+              minChildWidth="220px"
+              className="pt-4 pb-[90px] border-b-2  "
             >
-              <SimpleGrid
-                px={"2"}
-                gap="4"
-                columns={2}
-                minChildWidth="220px"
-                className="pt-4 pb-[90px] border-b-2  "
+              <motion.div>
+                <Box
+                  as="ul"
+                  className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
+                >
+                  <Grid className="px-5 py-2  text-xl ">
+                    <h1 className="">Members</h1>
+                    <div className="my-3 md:flex flex gap-2 ">
+                      3.5<h1 className="text-red-500">K+</h1>
+                    </div>
+                  </Grid>
+                  <div className="text-right px-8 py-4 mt-[-95px] ">
+                    <Avatar />
+                  </div>
+                </Box>
+              </motion.div>
+              <Box
+                as="ul"
+                className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
               >
-                <motion.div variants={listItem}>
-                  <Box
-                    as="ul"
-                    className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
-                  >
-                    <Grid className="px-5 py-2  text-xl ">
-                      <h1 className="">Members</h1>
-                      <div className="my-3 md:flex flex gap-2 ">
-                        3.5<h1 className="text-red-500">K+</h1>
-                      </div>
-                    </Grid>
-                    <div className="text-right px-8 py-4 mt-[-95px] ">
-                      <Avatar />
-                    </div>
-                  </Box>
-                </motion.div>
-                <Box
-                  as="ul"
-                  className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
-                >
-                  <Grid className="px-5 py-2  text-xl ">
-                    <h1 className="">Programs</h1>
-                    <div className="my-3 md:flex flex  ">
-                      5<h1 className="text-red-500">+</h1>
-                    </div>
-                  </Grid>
-                  <div className="text-right px-8 py-4 mt-[-95px] ">
-                    <Icon as={IconProgrammingLanguage} h="50px" w="50px" />
+                <Grid className="px-5 py-2  text-xl ">
+                  <h1 className="">Programs</h1>
+                  <div className="my-3 md:flex flex  ">
+                    5<h1 className="text-red-500">+</h1>
                   </div>
-                </Box>
-                <Box
-                  as="ul"
-                  className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
-                >
-                  <Grid className="px-5 py-2  text-xl ">
-                    <h1 className="">Cities</h1>
-                    <div className="my-3 md:flex flex  ">
-                      4<h1 className="text-red-500">+</h1>
-                    </div>
-                  </Grid>
-                  <div className="text-right px-8 py-4 mt-[-95px] ">
-                    <Icon as={IconBxMap} h="50px" w="50px" />
+                </Grid>
+                <div className="text-right px-8 py-4 mt-[-95px] ">
+                  <Icon as={IconProgrammingLanguage} h="50px" w="50px" />
+                </div>
+              </Box>
+              <Box
+                as="ul"
+                className="border-2 py-2 font-bold  shadow-lg shadow-cyan-500/50 rounded-lg border-black-400"
+              >
+                <Grid className="px-5 py-2  text-xl ">
+                  <h1 className="">Cities</h1>
+                  <div className="my-3 md:flex flex  ">
+                    4<h1 className="text-red-500">+</h1>
                   </div>
-                </Box>
-              </SimpleGrid>
-            </motion.div>
+                </Grid>
+                <div className="text-right px-8 py-4 mt-[-95px] ">
+                  <Icon as={IconBxMap} h="50px" w="50px" />
+                </div>
+              </Box>
+            </SimpleGrid>
           </motion.div>
         </motion.div>
         <motion.div className=" pt-[30px] mx-10 ">
